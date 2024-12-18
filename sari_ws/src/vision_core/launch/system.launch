@@ -1,0 +1,4 @@
+<launch>
+<node name="obj_sel_node" pkg="vision_core" type="object_selector.py" />
+<node name="get_obj_id_node" pkg="voice_core" type="get_obj_id_from_voice.py" />
+</launch>

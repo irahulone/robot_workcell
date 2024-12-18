@@ -1,0 +1,634 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "object selection",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetObjectLabel",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "object_name"
+                        }
+                    ],
+                    "samples": [
+                        "can you give me the {name}",
+                        "what is the {name} ",
+                        "give me the {name}",
+                        "{name}"
+                    ]
+                },
+                {
+                    "name": "IsObjectAvailable",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "object_name"
+                        }
+                    ],
+                    "samples": [
+                        "Is there a {name}",
+                        "Do I have a {name} ",
+                        "Is there any {name} "
+                    ]
+                },
+                {
+                    "name": "GetObjectLocation",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "object_name"
+                        }
+                    ],
+                    "samples": [
+                        "where is the {name}"
+                    ]
+                },
+                {
+                    "name": "GetWorkspaceObjects",
+                    "slots": [],
+                    "samples": [
+                        "what objects are present in the workspace",
+                        "give me the objects in the workspace",
+                        "What are the objects in the workspace",
+                        "What objects are in the workspace"
+                    ]
+                },
+                {
+                    "name": "PickupObject",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "object_name"
+                        }
+                    ],
+                    "samples": [
+                        "can you place the {name} on the roll",
+                        "can you place the {name} on the black roll",
+                        "pickup {name}",
+                        "can you put {name} on the black roll",
+                        "put {name} on the black roll",
+                        "can you place {name} on the black roll",
+                        "place {name} on the black roll "
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "object_name",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "black roll"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "basketball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green block"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yellow boat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red boat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "unlabeled"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "person"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bicycle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "car"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "motorcycle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "airplane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "train"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "truck"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "boat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "traffic light"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fire hydrant"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "street sign"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stop sign"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parking meter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bench"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bird"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "horse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sheep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "elephant"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zebra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "giraffe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "backpack"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "umbrella"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shoe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eye glasses"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "handbag"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "suitcase"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frisbee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "skis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "snowboard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sports ball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "baseball bat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "baseball glove"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "skateboard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "surfboard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tennis racket"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bottle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wine glass"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cup"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fork"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "knife"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spoon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bowl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "banana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "apple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sandwich"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orange"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "broccoli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carrot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hot dog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pizza"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "donut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chair"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "couch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potted plant"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mirror"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dining table"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "window"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "toilet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "door"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "laptop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mouse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "remote"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "keyboard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cell phone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "microwave"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "toaster"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "refrigerator"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blender"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "book"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clock"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vase"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scissors"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "teddy bear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hair drier"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "toothbrush"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GetObjectLabel",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "object_name",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1523253535881.837340494123"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1523253535881.837340494123",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the object you are interested in?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Select an object you want to know its ID"
+                    }
+                ]
+            }
+        ]
+    }
+}

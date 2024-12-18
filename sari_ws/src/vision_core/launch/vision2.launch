@@ -1,0 +1,4 @@
+<launch>
+<node name="vision" pkg="vision_core" type="vision_node" />
+<node name="obj_sel_node" pkg="vision_core" type="object_selector.py" />
+</launch>
